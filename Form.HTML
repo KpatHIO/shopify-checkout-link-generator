@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Checkout Link Generator</title>
+</head>
+<body>
+    <h1>Generate Shopify Checkout Link</h1>
+    <form id="checkoutForm">
+        <label for="variantId">Product Variant ID:</label>
+        <input type="text" id="variantId" required><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" required><br><br>
+
+        <label for="discountCode">Discount Code:</label>
+        <input type="text" id="discountCode"><br><br>
+
+        <label for="email">Customer Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="address">Shipping Address:</label><br>
+        <input type="text" id="address" placeholder="Address Line 1"><br>
+        <input type="text" id="city" placeholder="City"><br>
+        <input type="text" id="zip" placeholder="ZIP Code"><br>
+        <input type="text" id="country" placeholder="Country"><br><br>
+
+        <button type="button" onclick="generateLink()">Generate Checkout Link</button>
+    </form>
+
+    <p id="generatedLink"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
